@@ -1,0 +1,6 @@
+#packages needed in the local virtual environment
+openai
+langchain
+streamlit
+python-dotenv
+pyPDF2
