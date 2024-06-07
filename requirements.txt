@@ -1,6 +1,10 @@
-#packages needed in the local virtual environment
+#packages needed in the local virtual environmen
 openai
 langchain
 streamlit
 python-dotenv
-pyPDF2
+PyPDF2
+
+
+#for installation of local packages
+-e .
