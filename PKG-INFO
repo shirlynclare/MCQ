@@ -1,0 +1,13 @@
+Metadata-Version: 2.1
+Name: mcqgenerator
+Version: 0.0.1
+Summary: A package for generating multiple-choice questions
+Home-page: https://github.com/shirlynclare/mcqgenerator
+Author: Sunny Savita
+Author-email: sunny.savita@ineuron.ai
+License: MIT
+Requires-Dist: openai>=0.12.0
+Requires-Dist: langchain>=0.2.0
+Requires-Dist: streamlit>=1.7.0
+Requires-Dist: python-dotenv>=0.18.0
+Requires-Dist: PyPDF2>=1.26.0

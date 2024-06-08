@@ -1,16 +1,17 @@
-mport json
+import logging
 import os
-import json
-import traceback
-import pandas as pd
-from dotenv import load_dotenv
-from mcqgenrator.utils import read_file,get_table_data
-import streamlit as st
-from langchain.callbacks import get_openai_callback
-from mcqgenrator.MCQGenrator import generate_evaluate_chain
+from datetime import datetime
 
-#loading json file
-with open('C:\Complete_Content\All_Project\TEST_FOR_EVERYTHING\langchain\Response.json', 'r') as file:
-    RESPONSE_JSON = json.load(file)
+LOG_FILE=f"{datetime.now().strftime('%m_%d_%Y_%H_%M_%S')}.log"
 
-#print(RESPONSE_JSON)
+log_path=os.path.join(os.getcwd(),"logs")
+
+os.makedirs(log_path,exist_ok=True)
+
+LOG_FILEPATH=os.path.join(log_path,LOG_FILE)
+
+
+logging.basicConfig(level=logging.INFO, 
+                    filename=LOG_FILEPATH,
+                    format="[%(asctime)s] %(lineno)d %(name)s - %(levelname)s - %(message)s"
+)
